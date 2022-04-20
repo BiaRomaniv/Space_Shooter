@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(27, 27, 27);
+}
+
+#main-play-area {
+    background-color: black;
+    background-image: url(img/space.png);
+    height: 600px;
+    width: 600px;
+    border-radius: 15px;
+}
+
+.game-instructions {
+    position: relative;
+    color: red;
+    left: 3rem;
+    top: 0px;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+}
+
+.start-button {
+    position: relative;
+    color:black;
+    top: 9rem;
+    left: 15rem;
+    cursor: pointer;
+    width:max-content;
+    padding: 15px;
+    border-radius: 100%;
+    background-color: white;
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+}
+
+.start-button:hover {
+    background-color: rgb(10, 0, 44);
+    color: red;
+}
+
+.player-shooter {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    left: 20px;
+    top: 250px
+}
+
+.laser {
+    position: relative;
+    width: 40px;
+    height: 30px;
+}
+
+.alien {
+    height: 70px;
+    width: 70px;
+    position: relative;
+}
+
+.alien-transition {
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.dead-alien {
+    height: 70px;
+    width: 70px;
+    position: relative;
+    opacity: 0;
+}
