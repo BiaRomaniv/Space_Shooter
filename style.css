@@ -9,49 +9,63 @@ body {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(3, 0, 24);
+    background-image: url(img/space.png);
+}
+
+header{
+    width: 100px;
+    height: 40px;
+    position: relative;
+    top: 0;
+    color: white;
+    font-size: 20px;
 }
 
 #main-play-area {
     background-color: black;
     background-image: url(img/space.png);
-    height: 600px;
-    width: 600px;
+    height: 800px;
+    width: 800px;
     border-radius: 15px;
 }
 
 .game-instructions {
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    border-radius: 10px;
     position: relative;
     color: red;
-    left: 3rem;
-    top: 0px;
     font-family: 'Cinzel', serif;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .start-button {
+    
     position: relative;
     color:black;
-    top: 9rem;
-    left: 15rem;
+    top: 10rem;
+    left: 20rem;
     cursor: pointer;
-    width:max-content;
-    padding: 15px;
-    border-radius: 100%;
-    background-color: white;
+    width:125px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: aliceblue;
     font-family: 'Cinzel', serif;
     font-size: 15px;
 }
 
 .start-button:hover {
-    background-color: rgb(10, 0, 44);
-    color: red;
+    background-color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
+    text-shadow: 10px;
 }
 
 .player-shooter {
     position: relative;
-    height: 70px;
-    width: 70px;
+    height: 80px;
+    width: 80px;
     left: 20px;
     top: 250px
 }
@@ -59,7 +73,7 @@ body {
 .laser {
     position: relative;
     width: 40px;
-    height: 30px;
+    height: 40px;
 }
 
 .alien {
